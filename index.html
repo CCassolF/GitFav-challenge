@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/star.svg" type="image/x-icon">
+
+  <title>GitFav</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div id="app">
+
+    <header>
+      <img src="./assets/logo.svg" alt="">
+
+      <div class="input-wrapper">
+        <label for="input" class="sr-only">Enter the github username you want to favorite.</label>
+        <input id="input" type="text" placeholder="Enter the github username you want to favorite.">
+
+        <button>
+          <i data-lucide="star"></i>
+          Favorite
+        </button>
+      </div>
+    </header>
+
+    <table class="content-table">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Repositories</th>
+          <th>Followers</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+      
+    </table>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
